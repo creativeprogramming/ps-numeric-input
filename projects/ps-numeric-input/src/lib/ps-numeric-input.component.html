@@ -1,0 +1,20 @@
+<div fxLayout="row">
+  <div flexFill fxLayoutGap="5px">
+    <div fxFlex="40%">
+      <mat-form-field appearance="fill" fxFlexFill>
+        <mat-label>{{label}}</mat-label>
+        <input minValue [min]="min" maxValue [max]="max" (change)="onNumberChanged($event)" [(ngModel)]="value"
+          type="number" matInput>
+      </mat-form-field>
+    </div>
+    <div fxFlex="60%">
+      <label-smart-slider preventSliderClick=true [label]="label" [min]="min" [max]="max"
+        (sliderInput)="onSliderInput($event)" [value]="value">
+      </label-smart-slider>
+   <!--<app-slider-input  [min]="min" [max]="max" (sliderInput)="onSliderInput($event)"
+          [value]="value">
+        </app-slider-input>-->
+
+    </div>
+  </div>
+</div>

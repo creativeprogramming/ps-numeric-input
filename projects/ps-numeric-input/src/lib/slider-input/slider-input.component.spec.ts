@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PsNumericInputComponent } from './ps-numeric-input.component';
+import { SliderInputComponent } from './slider-input.component';
 
-describe('TrendMillisecondsPickerComponent', () => {
-  let component: PsNumericInputComponent;
-  let fixture: ComponentFixture<PsNumericInputComponent>;
+describe('SliderInputComponent', () => {
+  let component: SliderInputComponent;
+  let fixture: ComponentFixture<SliderInputComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PsNumericInputComponent ]
+      declarations: [ SliderInputComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PsNumericInputComponent);
+    fixture = TestBed.createComponent(SliderInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

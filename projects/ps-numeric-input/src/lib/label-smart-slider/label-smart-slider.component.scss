@@ -1,0 +1,11 @@
+.label-smart-slider {
+  cursor: col-resize;
+  height: 4em;
+  line-height: 4em;
+}
+.label-smart-slider-inner{
+  // margin-left: 1em;
+}
+label-smart-slider.mat-slider.mat-focus-indicator.mat-accent.mat-slider-horizontal:focus{
+  outline: none;
+}
